@@ -30,9 +30,10 @@
                 :breaks="true"
                 :html="true"
                 :source="text"
-              ></vue-markdown-it
+              > </vue-markdown-it
               >{{}}
             </div>
+          </div>
           </div>
           <div
             class="col-md-4 mt-2 d-flex align-items-stretch justify-content-stretch,"
