@@ -12,6 +12,7 @@
   "author": "Vlad Starkovsky",
   "license": "ISC",
   "dependencies": {
+    "@types/vue-markdown": "^2.2.1",
     "marked": "^1.2.7",
     "v-markdown-editor": "^1.2.6",
     "vue": "^3.0.0-beta.18",

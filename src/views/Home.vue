@@ -30,10 +30,8 @@
                 :breaks="true"
                 :html="true"
                 :source="text"
-              > </vue-markdown-it
-              >{{}}
+              >{{}}</vue-markdown-it>
             </div>
-          </div>
           </div>
           <div
             class="col-md-4 mt-2 d-flex align-items-stretch justify-content-stretch,"
@@ -90,7 +88,7 @@ export default defineComponent({
         })
         .then((json) => {
           this.err = "";
-
+          console.log(json);
           let pages = json.query.pages;
           for (var key in pages) {
             this.content = pages[key].extract;
@@ -112,7 +110,7 @@ export default defineComponent({
   components: { VueMarkdownIt },
   created() {
     document.onmouseup = document.onkeyup = document.onselectionchange = () => {
-      console.log("select");
+      // console.log("select");
       if (window.getSelection().toString().length > 0) {
         this.selectedWord = window.getSelection().toString();
         this.fetchData();
